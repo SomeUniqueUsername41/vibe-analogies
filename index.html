@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Things That Feel Like...</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111827;
+            color: #f9fafb;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: #1f2937;
+            border-bottom: 4px solid #374151;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            max-width: 750px;
+            margin: 15px auto 0;
+            color: #d1d5db;
+            font-size: 1.1rem;
+        }
+
+        main {
+            width: min(1100px, 92%);
+            margin: 40px auto;
+        }
+
+        .analogy-set {
+            margin-bottom: 60px;
+        }
+
+        .analogy-set h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .analogy-description {
+            text-align: center;
+            color: #9ca3af;
+            margin: 0 auto 30px;
+            max-width: 800px;
+        }
+
+        .analogy-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .analogy-card {
+            background: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 14px;
+            padding: 24px;
+            transition:
+                transform 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .analogy-card:hover {
+            transform: translateY(-4px);
+            border-color: #9ca3af;
+        }
+
+        .analogy-card h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+            color: #93c5fd;
+        }
+
+        .character {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .reason {
+            margin: 0;
+            color: #d1d5db;
+        }
+
+        .formula {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            background: #111827;
+            color: #fbbf24;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 30px 20px;
+            text-align: center;
+            background: #1f2937;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 750px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .analogy-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Things That Feel Like...</h1>
+
+    <p>
+        Characters and shows sorted not only by what franchise or network
+        they actually belong to, but by what other franchise, genre,
+        or creative style they feel like.
+    </p>
+</header>
+
+<main>
+
+    <!-- Marvel vs. Capcom -->
+
+    <section class="analogy-set">
+
+        <h2>Marvel and Capcom</h2>
+
+        <p class="analogy-description">
+            Comic-book superhero energy versus arcade, anime,
+            martial-arts, and video-game energy.
+        </p>
+
+        <div class="analogy-grid">
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Marvel character and feels like a Marvel character
+                </h3>
+
+                <p class="character">
+                    Spider-Man
+                </p>
+
+                <p class="reason">
+                    Colorful costume, wisecracks, secret identity,
+                    tragic origin, supervillains, and classic
+                    superhero storytelling make Spider-Man pure
+                    Marvel comic-book DNA.
+                </p>
+
+                <span class="formula">
+                    Marvel → Marvel
+                </span>
+            </article>
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Marvel character but feels like a Capcom character
+                </h3>
+
+                <p class="character">
+                    Psylocke
+                </p>
+
+                <p class="reason">
+                    A psychic ninja with acrobatics, martial arts,
+                    and flashy energy weapons, Psylocke fits naturally
+                    beside characters from fighting games and
+                    action-heavy Capcom franchises.
+                </p>
+
+                <span class="formula">
+                    Marvel → Capcom
+                </span>
+            </article>
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Capcom character but feels like a Marvel character
+                </h3>
+
+                <p class="character">
+                    Captain Commando
+                </p>
+
+                <p class="reason">
+                    Captain Commando is essentially a futuristic
+                    superhero, complete with a heroic costume,
+                    super-powered technology, a team of unusual allies,
+                    and comic-book-style adventures.
+                </p>
+
+                <span class="formula">
+                    Capcom → Marvel
+                </span>
+            </article>
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Capcom character and feels like a Capcom character
+                </h3>
+
+                <p class="character">
+                    Ryu
+                </p>
+
+                <p class="reason">
+                    Martial arts, fireballs, rivalries, disciplined
+                    training, tournament combat, and an instantly
+                    recognizable fighting-game design make Ryu
+                    quintessentially Capcom.
+                </p>
+
+                <span class="formula">
+                    Capcom → Capcom
+                </span>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- Barsoom vs. Alien Legion -->
+
+    <section class="analogy-set">
+
+        <h2>Barsoom and Alien Legion</h2>
+
+        <p class="analogy-description">
+            Romantic sword-and-planet adventure versus gritty,
+            multicultural interstellar military science fiction.
+        </p>
+
+        <div class="analogy-grid">
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Barsoom character and feels like a Barsoom character
+                </h3>
+
+                <p class="character">
+                    Tars Tarkas
+                </p>
+
+                <p class="reason">
+                    A gigantic four-armed Green Martian warrior
+                    defined by personal honor, tribal culture,
+                    physical combat, and unlikely friendship,
+                    Tars Tarkas embodies Barsoom's alien
+                    sword-and-planet atmosphere.
+                </p>
+
+                <span class="formula">
+                    Barsoom → Barsoom
+                </span>
+            </article>
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Barsoom character but feels like an Alien Legion character
+                </h3>
+
+                <p class="character">
+                    Tan Hadron
+                </p>
+
+                <p class="reason">
+                    As a young Red Martian naval officer,
+                    Tan Hadron has more of a professional military
+                    identity than many of Barsoom's wandering princes,
+                    warriors, and adventurers.
+                </p>
+
+                <span class="formula">
+                    Barsoom → Alien Legion
+                </span>
+            </article>
+
+            <article class="analogy-card">
+                <h3>
+                    Is an Alien Legion character but feels like a Barsoom character
+                </h3>
+
+                <p class="character">
+                    Jugger Grimrod
+                </p>
+
+                <p class="reason">
+                    Grimrod's imposing alien physique,
+                    aggressive personality, and identity as a
+                    formidable warrior give him the aura of one
+                    of Barsoom's strange and dangerous fighting men.
+                </p>
+
+                <span class="formula">
+                    Alien Legion → Barsoom
+                </span>
+            </article>
+
+            <article class="analogy-card">
+                <h3>
+                    Is an Alien Legion character and feels like an Alien Legion character
+                </h3>
+
+                <p class="character">
+                    Sarigar
+                </p>
+
+                <p class="reason">
+                    A visibly alien professional military commander
+                    leading soldiers of many different species,
+                    Sarigar perfectly represents Alien Legion's
+                    "Foreign Legion in space" identity.
+                </p>
+
+                <span class="formula">
+                    Alien Legion → Alien Legion
+                </span>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- Nickelodeon vs. Cartoon Network -->
+
+    <section class="analogy-set">
+
+        <h2>Nickelodeon and Cartoon Network</h2>
+
+        <p class="analogy-description">
+            Comparing cartoons by the network that actually aired them
+            and the network whose creative personality they resemble.
+        </p>
+
+        <div class="analogy-grid">
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Nickelodeon show and feels like a Nickelodeon show
+                </h3>
+
+                <p class="character">
+                    SpongeBob SquarePants
+                </p>
+
+                <p class="reason">
+                    Bright colors, eccentric characters, slapstick,
+                    absurd humor, memorable catchphrases, and
+                    kid-friendly weirdness make SpongeBob almost
+                    synonymous with Nickelodeon's cartoon identity.
+                </p>
+
+                <span class="formula">
+                    Nickelodeon → Nickelodeon
+                </span>
+            </article>
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Nickelodeon show but feels like a Cartoon Network show
+                </h3>
+
+                <p class="character">
+                    My Life as a Teenage Robot
+                </p>
+
+                <p class="reason">
+                    Its geometric visual style, retro-futuristic
+                    setting, superhero action, and highly stylized
+                    animation make it resemble the creator-driven
+                    action-comedies associated with Cartoon Network.
+                </p>
+
+                <span class="formula">
+                    Nickelodeon → Cartoon Network
+                </span>
+            </article>
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Cartoon Network show but feels like a Nickelodeon show
+                </h3>
+
+                <p class="character">
+                    Camp Lazlo
+                </p>
+
+                <p class="reason">
+                    Its loose character comedy, oddball cast,
+                    expressive voices, and the creative influence
+                    of Rocko's Modern Life creator Joe Murray give
+                    it a particularly Nickelodeon-like personality.
+                </p>
+
+                <span class="formula">
+                    Cartoon Network → Nickelodeon
+                </span>
+            </article>
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Cartoon Network show and feels like a Cartoon Network show
+                </h3>
+
+                <p class="character">
+                    Dexter's Laboratory
+                </p>
+
+                <p class="reason">
+                    Bold graphic design, exaggerated action,
+                    strange science-fiction concepts, and
+                    creator-driven comedy make Dexter's Laboratory
+                    one of the clearest examples of classic
+                    Cartoon Network style.
+                </p>
+
+                <span class="formula">
+                    Cartoon Network → Cartoon Network
+                </span>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        Things That Feel Like... — sorting pop culture by origin and vibe.
+    </p>
+</footer>
+
+</body>
+</html>
