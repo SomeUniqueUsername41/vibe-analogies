@@ -11,6 +11,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -33,19 +37,39 @@
         }
 
         header p {
-            max-width: 750px;
+            max-width: 800px;
             margin: 15px auto 0;
             color: #d1d5db;
             font-size: 1.1rem;
         }
 
+        nav {
+            margin-top: 30px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px;
+            padding: 7px 12px;
+            border: 1px solid #4b5563;
+            border-radius: 20px;
+            color: #dbeafe;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            background: #374151;
+        }
+
         main {
-            width: min(1100px, 92%);
+            width: min(1200px, 92%);
             margin: 40px auto;
         }
 
         .analogy-set {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
+            scroll-margin-top: 20px;
         }
 
         .analogy-set h2 {
@@ -58,12 +82,15 @@
             text-align: center;
             color: #9ca3af;
             margin: 0 auto 30px;
-            max-width: 800px;
+            max-width: 850px;
         }
 
         .analogy-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(280px, 1fr)
+            );
             gap: 20px;
         }
 
@@ -85,11 +112,11 @@
         .analogy-card h3 {
             margin-top: 0;
             margin-bottom: 12px;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             color: #93c5fd;
         }
 
-        .character {
+        .subject {
             margin: 0 0 10px;
             font-size: 1.5rem;
             font-weight: bold;
@@ -124,8 +151,8 @@
                 font-size: 2.2rem;
             }
 
-            .analogy-grid {
-                grid-template-columns: 1fr;
+            .analogy-set h2 {
+                font-size: 1.7rem;
             }
         }
     </style>
@@ -137,17 +164,782 @@
     <h1>Things That Feel Like...</h1>
 
     <p>
-        Characters and shows sorted not only by what franchise or network
-        they actually belong to, but by what other franchise, genre,
-        or creative style they feel like.
+        Games, characters, cartoons, and fictional worlds sorted not
+        only by what franchise or company they actually belong to,
+        but by what other franchise, company, genre, or creative style
+        they feel like.
     </p>
+
+    <nav>
+        <a href="#games">Nintendo / Sega / Namco Games</a>
+        <a href="#game-characters">Nintendo / Sega / Namco Characters</a>
+        <a href="#pokemon-digimon">Pokémon / Digimon</a>
+        <a href="#autobots-decepticons">Autobots / Decepticons</a>
+        <a href="#maximals-predacons">Maximals / Predacons</a>
+        <a href="#marvel-capcom">Marvel / Capcom</a>
+        <a href="#barsoom-alien-legion">Barsoom / Alien Legion</a>
+        <a href="#nick-cn">Nickelodeon / Cartoon Network</a>
+    </nav>
 </header>
 
 <main>
 
-    <!-- Marvel vs. Capcom -->
+    <!-- ====================================================== -->
+    <!-- Nintendo / Sega / Namco Games -->
+    <!-- ====================================================== -->
 
-    <section class="analogy-set">
+    <section class="analogy-set" id="games">
+
+        <h2>Nintendo, Sega, and Namco Games</h2>
+
+        <p class="analogy-description">
+            Comparing games by the company they belong to and the
+            design philosophy, arcade energy, or general personality
+            of another major Japanese game company.
+        </p>
+
+        <div class="analogy-grid">
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Nintendo game and feels like a Nintendo game
+                </h3>
+
+                <p class="subject">
+                    The Legend of Zelda: Ocarina of Time
+                </p>
+
+                <p class="reason">
+                    Its colorful fantasy world, inventive mechanics,
+                    memorable characters, sense of discovery, and
+                    carefully polished adventure design make it one
+                    of the clearest examples of Nintendo's classic
+                    game-design philosophy.
+                </p>
+
+                <span class="formula">
+                    Nintendo → Nintendo
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Nintendo game but feels like a Sega game
+                </h3>
+
+                <p class="subject">
+                    F-Zero GX
+                </p>
+
+                <p class="reason">
+                    Its extreme speed, arcade attitude, futuristic
+                    spectacle, and aggressive difficulty feel very
+                    Sega-like. Appropriately, the game was also
+                    developed with Sega's arcade expertise.
+                </p>
+
+                <span class="formula">
+                    Nintendo → Sega
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Nintendo game but feels like a Namco game
+                </h3>
+
+                <p class="subject">
+                    Star Fox: Assault
+                </p>
+
+                <p class="reason">
+                    Its arcade shooting, science-fiction combat,
+                    mission structure, and heavier emphasis on action
+                    make it feel at home beside Namco's arcade and
+                    sci-fi action games.
+                </p>
+
+                <span class="formula">
+                    Nintendo → Namco
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Sega game but feels like a Nintendo game
+                </h3>
+
+                <p class="subject">
+                    Billy Hatcher and the Giant Egg
+                </p>
+
+                <p class="reason">
+                    Colorful worlds, a cheerful mascot hero,
+                    playful mechanics, and a whimsical platforming
+                    adventure give it the feel of an experimental
+                    Nintendo title.
+                </p>
+
+                <span class="formula">
+                    Sega → Nintendo
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Sega game and feels like a Sega game
+                </h3>
+
+                <p class="subject">
+                    Sonic Adventure 2
+                </p>
+
+                <p class="reason">
+                    Speed, attitude, rock music, arcade-style scoring,
+                    ambitious spectacle, and a distinctly turn-of-the-
+                    millennium cool factor make it quintessential Sega.
+                </p>
+
+                <span class="formula">
+                    Sega → Sega
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Sega game but feels like a Namco game
+                </h3>
+
+                <p class="subject">
+                    The House of the Dead 2
+                </p>
+
+                <p class="reason">
+                    Although unmistakably Sega, its intense
+                    arcade-shooter structure and light-gun action
+                    make it feel closely related to the sort of
+                    arcade experience associated with Namco's
+                    Time Crisis.
+                </p>
+
+                <span class="formula">
+                    Sega → Namco
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Namco game but feels like a Nintendo game
+                </h3>
+
+                <p class="subject">
+                    Klonoa: Door to Phantomile
+                </p>
+
+                <p class="reason">
+                    A lovable mascot, colorful fantasy environments,
+                    clever platforming mechanics, and emotional
+                    storybook presentation make Klonoa feel unusually
+                    compatible with Nintendo's platforming tradition.
+                </p>
+
+                <span class="formula">
+                    Namco → Nintendo
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Namco game but feels like a Sega game
+                </h3>
+
+                <p class="subject">
+                    Time Crisis II
+                </p>
+
+                <p class="reason">
+                    Its fast-paced arcade presentation, light-gun
+                    action, dramatic spectacle, and emphasis on
+                    reflexes fit comfortably beside Sega arcade
+                    games such as Virtua Cop and The House of the Dead.
+                </p>
+
+                <span class="formula">
+                    Namco → Sega
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Namco game and feels like a Namco game
+                </h3>
+
+                <p class="subject">
+                    Tekken 3
+                </p>
+
+                <p class="reason">
+                    Polished 3D arcade combat, eccentric fighters,
+                    technical gameplay, dramatic presentation,
+                    and unmistakable late-1990s arcade energy make
+                    it one of the clearest examples of classic Namco.
+                </p>
+
+                <span class="formula">
+                    Namco → Namco
+                </span>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- Nintendo / Sega / Namco Characters -->
+    <!-- ====================================================== -->
+
+    <section class="analogy-set" id="game-characters">
+
+        <h2>Nintendo, Sega, and Namco Characters</h2>
+
+        <p class="analogy-description">
+            The same three-way comparison, but applied to character
+            design, personality, genre, and mascot energy.
+        </p>
+
+        <div class="analogy-grid">
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Nintendo character and feels like a Nintendo character
+                </h3>
+
+                <p class="subject">
+                    Mario
+                </p>
+
+                <p class="reason">
+                    Friendly, instantly readable, colorful, versatile,
+                    and built around simple but expressive movement,
+                    Mario is essentially Nintendo's design philosophy
+                    personified.
+                </p>
+
+                <span class="formula">
+                    Nintendo → Nintendo
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Nintendo character but feels like a Sega character
+                </h3>
+
+                <p class="subject">
+                    Captain Falcon
+                </p>
+
+                <p class="reason">
+                    His exaggerated confidence, futuristic racing
+                    background, flashy moves, speed, and larger-than-
+                    life personality give him the sort of arcade
+                    coolness strongly associated with Sega.
+                </p>
+
+                <span class="formula">
+                    Nintendo → Sega
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Nintendo character but feels like a Namco character
+                </h3>
+
+                <p class="subject">
+                    Fox McCloud
+                </p>
+
+                <p class="reason">
+                    As the heroic pilot of an arcade-style
+                    science-fiction combat series, Fox fits naturally
+                    beside the pilots and futuristic action heroes
+                    found throughout Namco's arcade history.
+                </p>
+
+                <span class="formula">
+                    Nintendo → Namco
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Sega character but feels like a Nintendo character
+                </h3>
+
+                <p class="subject">
+                    Billy Hatcher
+                </p>
+
+                <p class="reason">
+                    His cheerful design, simple heroic personality,
+                    colorful fantasy world, and unusual gameplay
+                    gimmick make him feel like the protagonist of a
+                    Nintendo platforming experiment.
+                </p>
+
+                <span class="formula">
+                    Sega → Nintendo
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Sega character and feels like a Sega character
+                </h3>
+
+                <p class="subject">
+                    Sonic the Hedgehog
+                </p>
+
+                <p class="reason">
+                    Speed, attitude, sneakers, bright colors,
+                    arcade energy, and deliberate coolness make
+                    Sonic the clearest possible expression of
+                    Sega's mascot identity.
+                </p>
+
+                <span class="formula">
+                    Sega → Sega
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Sega character but feels like a Namco character
+                </h3>
+
+                <p class="subject">
+                    Akira Yuki
+                </p>
+
+                <p class="reason">
+                    As a serious martial artist from a technical
+                    3D fighting series, Akira could fit remarkably
+                    naturally into the roster of a Namco fighter
+                    such as Tekken.
+                </p>
+
+                <span class="formula">
+                    Sega → Namco
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Namco character but feels like a Nintendo character
+                </h3>
+
+                <p class="subject">
+                    Klonoa
+                </p>
+
+                <p class="reason">
+                    Cute, expressive, heroic, easy to recognize,
+                    and built around a colorful platforming world,
+                    Klonoa has the qualities of a classic Nintendo
+                    mascot despite belonging to Namco.
+                </p>
+
+                <span class="formula">
+                    Namco → Nintendo
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Namco character but feels like a Sega character
+                </h3>
+
+                <p class="subject">
+                    Rick Taylor
+                </p>
+
+                <p class="reason">
+                    The masked Splatterhouse protagonist has the
+                    aggressive, edgy, arcade-brawler personality
+                    that fits comfortably with the harder-edged side
+                    of Sega's character library.
+                </p>
+
+                <span class="formula">
+                    Namco → Sega
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Namco character and feels like a Namco character
+                </h3>
+
+                <p class="subject">
+                    Pac-Man
+                </p>
+
+                <p class="reason">
+                    Simple shapes, instantly understandable gameplay,
+                    arcade history, universal appeal, and one of the
+                    most recognizable designs in video games make
+                    Pac-Man quintessential Namco.
+                </p>
+
+                <span class="formula">
+                    Namco → Namco
+                </span>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- Pokémon / Digimon -->
+    <!-- ====================================================== -->
+
+    <section class="analogy-set" id="pokemon-digimon">
+
+        <h2>Pokémon and Digimon</h2>
+
+        <p class="analogy-description">
+            Comparing two monster franchises by creature design,
+            personality, evolutionary style, and overall aesthetic.
+        </p>
+
+        <div class="analogy-grid">
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Pokémon and feels like a Pokémon
+                </h3>
+
+                <p class="subject">
+                    Pikachu
+                </p>
+
+                <p class="reason">
+                    Cute, animal-inspired, approachable, expressive,
+                    and built around one clear elemental ability,
+                    Pikachu represents the classic Pokémon design
+                    philosophy almost perfectly.
+                </p>
+
+                <span class="formula">
+                    Pokémon → Pokémon
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Pokémon but feels like a Digimon
+                </h3>
+
+                <p class="subject">
+                    Lucario
+                </p>
+
+                <p class="reason">
+                    Lucario's humanoid proportions, martial-arts
+                    abilities, aura powers, serious personality,
+                    and anime-hero quality make it resemble the
+                    more character-driven designs common in Digimon.
+                </p>
+
+                <span class="formula">
+                    Pokémon → Digimon
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Digimon but feels like a Pokémon
+                </h3>
+
+                <p class="subject">
+                    Patamon
+                </p>
+
+                <p class="reason">
+                    Small, cute, animal-like, immediately readable,
+                    and relatively simple in design, Patamon could
+                    easily pass for a creature encountered in a
+                    Pokémon region.
+                </p>
+
+                <span class="formula">
+                    Digimon → Pokémon
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Digimon and feels like a Digimon
+                </h3>
+
+                <p class="subject">
+                    Agumon
+                </p>
+
+                <p class="reason">
+                    A talking dinosaur partner who can transform into
+                    increasingly elaborate and powerful forms,
+                    Agumon embodies Digimon's mixture of friendship,
+                    combat, evolution, and anime adventure.
+                </p>
+
+                <span class="formula">
+                    Digimon → Digimon
+                </span>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- Autobots / Decepticons -->
+    <!-- ====================================================== -->
+
+    <section class="analogy-set" id="autobots-decepticons">
+
+        <h2>Autobots and Decepticons</h2>
+
+        <p class="analogy-description">
+            Comparing Transformers characters by faction and by
+            whether their personality, morality, or combat style
+            resembles the opposite side.
+        </p>
+
+        <div class="analogy-grid">
+
+            <article class="analogy-card">
+                <h3>
+                    Is an Autobot and feels like an Autobot
+                </h3>
+
+                <p class="subject">
+                    Optimus Prime
+                </p>
+
+                <p class="reason">
+                    Noble, protective, self-sacrificing, diplomatic,
+                    and willing to fight when necessary, Optimus is
+                    the defining expression of the Autobot ideal.
+                </p>
+
+                <span class="formula">
+                    Autobot → Autobot
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is an Autobot but feels like a Decepticon
+                </h3>
+
+                <p class="subject">
+                    Grimlock
+                </p>
+
+                <p class="reason">
+                    Brutal strength, aggression, pride, a monstrous
+                    alternate form, and frequent resistance to
+                    authority give Grimlock much more of a
+                    Decepticon-like edge than the typical Autobot.
+                </p>
+
+                <span class="formula">
+                    Autobot → Decepticon
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Decepticon but feels like an Autobot
+                </h3>
+
+                <p class="subject">
+                    Thundercracker
+                </p>
+
+                <p class="reason">
+                    In portrayals that emphasize his doubts about the
+                    Decepticon cause, Thundercracker can seem more
+                    reflective and morally conflicted than his fellow
+                    Seekers, giving him an unusually Autobot-like side.
+                </p>
+
+                <span class="formula">
+                    Decepticon → Autobot
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Decepticon and feels like a Decepticon
+                </h3>
+
+                <p class="subject">
+                    Megatron
+                </p>
+
+                <p class="reason">
+                    Ruthless ambition, overwhelming firepower,
+                    authoritarian leadership, and an obsession with
+                    conquest make Megatron the archetypal Decepticon.
+                </p>
+
+                <span class="formula">
+                    Decepticon → Decepticon
+                </span>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- Maximals / Predacons -->
+    <!-- ====================================================== -->
+
+    <section class="analogy-set" id="maximals-predacons">
+
+        <h2>Maximals and Predacons</h2>
+
+        <p class="analogy-description">
+            The Beast Wars version of the same idea: faction
+            membership versus personality, history, and moral alignment.
+        </p>
+
+        <div class="analogy-grid">
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Maximal and feels like a Maximal
+                </h3>
+
+                <p class="subject">
+                    Optimus Primal
+                </p>
+
+                <p class="reason">
+                    Responsible, compassionate, courageous, and
+                    protective of his crew, Optimus Primal represents
+                    the cooperative and heroic ideals of the Maximals.
+                </p>
+
+                <span class="formula">
+                    Maximal → Maximal
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Maximal but feels like a Predacon
+                </h3>
+
+                <p class="subject">
+                    Dinobot
+                </p>
+
+                <p class="reason">
+                    Proud, intimidating, confrontational, obsessed
+                    with strength and honor, and originally a
+                    Predacon himself, Dinobot retains much of the
+                    opposing faction's personality even after joining
+                    the Maximals.
+                </p>
+
+                <span class="formula">
+                    Maximal → Predacon
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Predacon but feels like a Maximal
+                </h3>
+
+                <p class="subject">
+                    Blackarachnia
+                </p>
+
+                <p class="reason">
+                    Her independence, increasing moral complexity,
+                    emotional connections, and eventual movement
+                    toward the Maximals make her feel less naturally
+                    Predacon than her original allegiance suggests.
+                </p>
+
+                <span class="formula">
+                    Predacon → Maximal
+                </span>
+            </article>
+
+
+            <article class="analogy-card">
+                <h3>
+                    Is a Predacon and feels like a Predacon
+                </h3>
+
+                <p class="subject">
+                    Megatron
+                </p>
+
+                <p class="reason">
+                    Scheming, theatrical, manipulative, ambitious,
+                    and determined to dominate both his enemies and
+                    his own troops, Beast Wars Megatron is Predacon
+                    energy distilled into one character.
+                </p>
+
+                <span class="formula">
+                    Predacon → Predacon
+                </span>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- Marvel / Capcom -->
+    <!-- ====================================================== -->
+
+    <section class="analogy-set" id="marvel-capcom">
 
         <h2>Marvel and Capcom</h2>
 
@@ -163,7 +955,7 @@
                     Is a Marvel character and feels like a Marvel character
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Spider-Man
                 </p>
 
@@ -179,12 +971,13 @@
                 </span>
             </article>
 
+
             <article class="analogy-card">
                 <h3>
                     Is a Marvel character but feels like a Capcom character
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Psylocke
                 </p>
 
@@ -200,19 +993,20 @@
                 </span>
             </article>
 
+
             <article class="analogy-card">
                 <h3>
                     Is a Capcom character but feels like a Marvel character
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Captain Commando
                 </p>
 
                 <p class="reason">
                     Captain Commando is essentially a futuristic
                     superhero, complete with a heroic costume,
-                    super-powered technology, a team of unusual allies,
+                    super-powered technology, unusual teammates,
                     and comic-book-style adventures.
                 </p>
 
@@ -221,12 +1015,13 @@
                 </span>
             </article>
 
+
             <article class="analogy-card">
                 <h3>
                     Is a Capcom character and feels like a Capcom character
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Ryu
                 </p>
 
@@ -246,9 +1041,11 @@
     </section>
 
 
-    <!-- Barsoom vs. Alien Legion -->
+    <!-- ====================================================== -->
+    <!-- Barsoom / Alien Legion -->
+    <!-- ====================================================== -->
 
-    <section class="analogy-set">
+    <section class="analogy-set" id="barsoom-alien-legion">
 
         <h2>Barsoom and Alien Legion</h2>
 
@@ -264,7 +1061,7 @@
                     Is a Barsoom character and feels like a Barsoom character
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Tars Tarkas
                 </p>
 
@@ -281,12 +1078,13 @@
                 </span>
             </article>
 
+
             <article class="analogy-card">
                 <h3>
                     Is a Barsoom character but feels like an Alien Legion character
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Tan Hadron
                 </p>
 
@@ -302,12 +1100,13 @@
                 </span>
             </article>
 
+
             <article class="analogy-card">
                 <h3>
                     Is an Alien Legion character but feels like a Barsoom character
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Jugger Grimrod
                 </p>
 
@@ -323,12 +1122,13 @@
                 </span>
             </article>
 
+
             <article class="analogy-card">
                 <h3>
                     Is an Alien Legion character and feels like an Alien Legion character
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Sarigar
                 </p>
 
@@ -348,15 +1148,18 @@
     </section>
 
 
-    <!-- Nickelodeon vs. Cartoon Network -->
+    <!-- ====================================================== -->
+    <!-- Nickelodeon / Cartoon Network -->
+    <!-- ====================================================== -->
 
-    <section class="analogy-set">
+    <section class="analogy-set" id="nick-cn">
 
         <h2>Nickelodeon and Cartoon Network</h2>
 
         <p class="analogy-description">
-            Comparing cartoons by the network that actually aired them
-            and the network whose creative personality they resemble.
+            Comparing cartoons by the network that actually aired
+            them and the network whose creative personality they
+            resemble.
         </p>
 
         <div class="analogy-grid">
@@ -366,7 +1169,7 @@
                     Is a Nickelodeon show and feels like a Nickelodeon show
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     SpongeBob SquarePants
                 </p>
 
@@ -382,12 +1185,13 @@
                 </span>
             </article>
 
+
             <article class="analogy-card">
                 <h3>
                     Is a Nickelodeon show but feels like a Cartoon Network show
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     My Life as a Teenage Robot
                 </p>
 
@@ -403,12 +1207,13 @@
                 </span>
             </article>
 
+
             <article class="analogy-card">
                 <h3>
                     Is a Cartoon Network show but feels like a Nickelodeon show
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Camp Lazlo
                 </p>
 
@@ -424,12 +1229,13 @@
                 </span>
             </article>
 
+
             <article class="analogy-card">
                 <h3>
                     Is a Cartoon Network show and feels like a Cartoon Network show
                 </h3>
 
-                <p class="character">
+                <p class="subject">
                     Dexter's Laboratory
                 </p>
 
@@ -450,6 +1256,7 @@
     </section>
 
 </main>
+
 
 <footer>
     <p>
